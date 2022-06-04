@@ -21,9 +21,13 @@
 	// tapping_term_ms = <200>;
 };
 
-/ { 
+/ {
 	combos {
 		compatible = "zmk,combos";
+	};
+
+	chosen {
+		zephyr,console = &cdc_acm_uart;
 	};
 
 	keymap {
@@ -64,5 +68,14 @@
 															&trans			&kp LA(BACKSPACE)	&trans			&trans
 			>;
 		};
+	};
+};
+
+// Allow USB logging
+&usbd {
+	status = "okay";
+	cdc_acm_uart: cdc_acm_uart {
+		compatible = "zephyr,cdc-acm-uart";
+		label = "CDC_ACM_0";
 	};
 };
