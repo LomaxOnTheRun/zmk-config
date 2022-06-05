@@ -62,7 +62,7 @@
 
 		layer_3 {
 			bindings = <
-			&kp ESC			&none			&none			&none			&none				&kp RG(PLUS)	&kp C_VOL_UP	&kp C_BRI_UP	&none			&none
+			&kp ESC			&none			&none			&bt BT_CLR		&bt BT_NXT			&kp RG(PLUS)	&kp C_VOL_UP	&kp C_BRI_UP	&none			&none
 			&kp F1			&kp F2			&kp F3			&kp F4			&kp F5				&kp RG(MINUS)	&kp C_VOL_DN	&kp C_BRI_DN	&none			&none
 			&kp F6			&kp F7			&kp F8			&kp F9			&kp F10				&none			&none			&none			&none			&kp RG(RC(Q))
 															&trans			&kp LA(BACKSPACE)	&trans			&trans
