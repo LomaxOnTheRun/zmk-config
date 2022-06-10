@@ -53,7 +53,7 @@
 
 		layer_2 {
 			bindings = <
-			&kp ESC			&none			&none			&none			&none				&kp PAGE_UP		&kp HOME		&kp UP			&kp END			&none
+			&kp ESC			&none			&none			&none			&none				&kp PAGE_UP		&kp RG(LEFT)	&kp UP			&kp RG(RIGHT)	&none
 			&mt LSHFT N1	&mt LALT N2		&mt LCTRL N3	&mt LCMD N4		&kp N5				&kp PAGE_DOWN	&kp LEFT		&kp DOWN		&kp RIGHT		&kp CAPSLOCK
 			&kp N6			&kp N7			&kp N8			&kp N9			&kp N0				&none			&kp RG(LBKT)	&none			&kp RG(RBKT)	&none
 															&trans			&trans				&mt RALT RG(ENTER) &trans
