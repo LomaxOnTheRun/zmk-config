@@ -9,15 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-// Layers (MacOs and Ubuntu)
+// Layers (MacOs)
 #define L_M0 0
 #define L_M1 1
 #define L_M2 2
 #define L_M3 3
-#define L_U0 4
-#define L_U1 5
-#define L_U2 6
-#define L_U3 7
 
 
 &mt {
@@ -68,48 +64,10 @@
 
 		layer_3 {
 			bindings = <
-			&kp ESC			&bt BT_CLR		&none			&to L_U0		&bt BT_NXT			&kp RG(PLUS)	&kp C_VOL_UP	&kp C_BRI_UP	&none			&none
+			&kp ESC			&bt BT_CLR		&none			&none			&bt BT_NXT			&kp RG(PLUS)	&kp C_VOL_UP	&kp C_BRI_UP	&none			&none
 			&kp F1			&kp F2			&kp F3			&kp F4			&kp F5				&kp RG(MINUS)	&kp C_VOL_DN	&kp C_BRI_DN	&none			&none
 			&kp F6			&kp F7			&kp F8			&kp F9			&kp F10				&kp C_PLAY		&kp C_PAUSE		&kp C_MUTE		&none			&kp RG(RC(Q))
 															&trans			&kp LA(BACKSPACE)	&trans			&trans
-			>;
-		};
-
-		// UBUNTU LAYERS
-
-		layer_4 {
-			bindings = <
-			&kp Q			&kp W			&kp E			&kp R			&kp T				&kp Y			&kp U			&kp I			&kp O			&kp P
-			&mt LSHFT A		&mt LALT S		&mt LCMD D		&mt LCTRL F		&kp G				&kp H			&mt RCTRL J		&mt RCMD K		&mt RALT L		&mt RSHFT SEMICOLON
-			&kp Z			&kp X			&kp C			&kp V			&kp B				&kp N			&kp M			&kp COMMA		&kp PERIOD		&kp SLASH
-															&lt L_U2 SPACE	&kp BACKSPACE		&lt L_U3 ENTER	&mo L_U1
-			>;
-		};
-
-		layer_5 {
-			bindings = <
-			&kp ESC			&none			&kp LBKT		&kp RBKT		&kp TAB				&kp AT			&kp DQT			&kp UNDERSCORE	&kp CARET		&kp DEL
-			&kp HASH		&kp DOLLAR		&kp LPAR		&kp RPAR		&kp COLON			&kp PERCENT		&mt RCTRL APOS	&mt RCMD MINUS	&mt RALT EQUAL	&mt RSHFT BACKSLASH
-			&kp AMPS		&kp PIPE		&kp LBRC		&kp RBRC		&kp GRAVE			&kp EXCLAMATION	&kp PLUS		&kp TILDE		&kp STAR		&kp BACKSLASH
-															&trans			&trans				&trans			&trans
-			>;
-		};
-
-		layer_6 {
-			bindings = <
-			&kp ESC			&none			&none			&none			&none				&kp PAGE_UP		&kp HOME		&kp UP			&kp END			&none
-			&mt LSHFT N1	&mt LALT N2		&mt LCMD N3		&mt LCTRL N4	&kp N5				&kp PAGE_DOWN	&kp LEFT		&kp DOWN		&kp RIGHT		&kp CAPSLOCK
-			&kp N6			&kp N7			&kp N8			&kp N9			&kp N0				&none			&kp RG(LBKT)	&none			&kp RG(RBKT)	&none
-															&trans			&trans				&mt RALT RG(ENTER) &trans
-			>;
-		};
-
-		layer_7 {
-			bindings = <
-			&kp ESC			&bt BT_CLR		&none			&to L_M0		&bt BT_NXT			&kp RG(PLUS)	&kp C_VOL_UP	&kp C_BRI_UP	&none			&none
-			&kp F1			&kp F2			&kp F3			&kp F4			&kp F5				&kp RG(MINUS)	&kp C_VOL_DN	&kp C_BRI_DN	&none			&none
-			&kp F6			&kp F7			&kp F8			&kp F9			&kp F10				&kp C_PLAY		&kp C_PAUSE		&kp C_MUTE		&none			&kp RC(L)
-															&trans			&kp LC(BACKSPACE)	&trans			&trans
 			>;
 		};
 	};
